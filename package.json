@@ -1,0 +1,49 @@
+{
+  "name": "egg-status",
+  "version": "1.0.0",
+  "eggPlugin": {
+    "name": "status"
+  },
+  "description": "status page checker",
+  "files": [
+    "*.js",
+    "*.d.ts",
+    "app/**/*.js",
+    "app/**/*.d.ts",
+    "config/**/*.js",
+    "config/**/*.d.ts"
+  ],
+  "scripts": {
+    "test": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint . --ext ts",
+    "ci": "npm run lint && npm run cov",
+    "clean": "tsc -b --clean",
+    "tsc": "npm run clean && tsc",
+    "prepublishOnly": "npm run tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@eggjs/tsconfig": "^1.3.3",
+    "@types/mocha": "^10.0.1",
+    "egg": "^3.15.0",
+    "egg-bin": "^6.4.0",
+    "egg-mock": "^5.10.6",
+    "eslint": "^8.38.0",
+    "eslint-config-egg": "^12.2.1",
+    "typescript": "^5.0.4"
+  },
+  "homepage": "https://github.com/eggjs/egg-status",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:eggjs/egg-status.git"
+  },
+  "keywords": [
+    "egg-status",
+    "egg",
+    "status"
+  ],
+  "engines": {
+    "node": ">= 16.0.0"
+  }
+}
