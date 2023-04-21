@@ -42,7 +42,7 @@ Then add npm scripts to package.json, create `egg.status` file after start and r
 
 Set "Health Check" on SLB, example on alicloud
 
-![image](https://user-images.githubusercontent.com/156269/233518349-736b50ce-d8ff-4269-95e1-8b0874bb90e0.png)
+![image](https://user-images.githubusercontent.com/156269/233519532-b502ebef-7b1a-4ff5-b0f0-40a0af1a365d.png)
 
 ## How to Contribute
 
